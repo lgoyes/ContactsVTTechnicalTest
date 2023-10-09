@@ -22,6 +22,26 @@
 		797415A12ACF0BC700B2F87A /* ContactDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797415A02ACF0BC700B2F87A /* ContactDirectory.swift */; };
 		797415A32ACF1FFD00B2F87A /* ListContactsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797415A22ACF1FFD00B2F87A /* ListContactsUseCase.swift */; };
 		797415A52ACF209200B2F87A /* AddContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797415A42ACF209200B2F87A /* AddContactUseCase.swift */; };
+		E83713EE2AD4AEEE0013867C /* UpdateContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713ED2AD4AEEE0013867C /* UpdateContactUseCase.swift */; };
+		E83713F02AD4AF3A0013867C /* RemoveContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713EF2AD4AF3A0013867C /* RemoveContactUseCase.swift */; };
+		E83713F22AD4AF800013867C /* ContactDirectoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713F12AD4AF800013867C /* ContactDirectoryBuilder.swift */; };
+		E83713F42AD4AFAB0013867C /* DelayedContactDirectoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713F32AD4AFAB0013867C /* DelayedContactDirectoryBuilder.swift */; };
+		E83713F72AD4B10E0013867C /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713F62AD4B10E0013867C /* DependencyContainer.swift */; };
+		E83713FA2AD4B1BC0013867C /* ListContactsUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713F92AD4B1BC0013867C /* ListContactsUseCaseBuilder.swift */; };
+		E83713FC2AD4B2BC0013867C /* AddContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713FB2AD4B2BC0013867C /* AddContactUseCaseBuilder.swift */; };
+		E83713FE2AD4B2F10013867C /* UpdateContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713FD2AD4B2F10013867C /* UpdateContactUseCaseBuilder.swift */; };
+		E83714002AD4B3290013867C /* RemoveContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83713FF2AD4B3290013867C /* RemoveContactUseCaseBuilder.swift */; };
+		E83714082AD4B4310013867C /* ExportContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714072AD4B4310013867C /* ExportContactUseCase.swift */; };
+		E837140A2AD4B7A20013867C /* DataConversionStrategyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714092AD4B7A20013867C /* DataConversionStrategyFactory.swift */; };
+		E837140C2AD4B83B0013867C /* DataReversionStrategyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837140B2AD4B83B0013867C /* DataReversionStrategyFactory.swift */; };
+		E837140E2AD4B8820013867C /* ConversionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837140D2AD4B8820013867C /* ConversionType.swift */; };
+		E83714112AD4B8A20013867C /* ReversionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714102AD4B8A20013867C /* ReversionType.swift */; };
+		E83714132AD4BD7D0013867C /* ImportContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714122AD4BD7D0013867C /* ImportContactUseCase.swift */; };
+		E83714152AD4C2340013867C /* DataContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714142AD4C2340013867C /* DataContact.swift */; };
+		E83714172AD4C3E60013867C /* ContactMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714162AD4C3E60013867C /* ContactMapper.swift */; };
+		E83714192AD4C3FE0013867C /* DataContactMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714182AD4C3FE0013867C /* DataContactMapper.swift */; };
+		E837141B2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837141A2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift */; };
+		E837141D2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837141C2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +70,26 @@
 		797415A02ACF0BC700B2F87A /* ContactDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDirectory.swift; sourceTree = "<group>"; };
 		797415A22ACF1FFD00B2F87A /* ListContactsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsUseCase.swift; sourceTree = "<group>"; };
 		797415A42ACF209200B2F87A /* AddContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactUseCase.swift; sourceTree = "<group>"; };
+		E83713ED2AD4AEEE0013867C /* UpdateContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContactUseCase.swift; sourceTree = "<group>"; };
+		E83713EF2AD4AF3A0013867C /* RemoveContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveContactUseCase.swift; sourceTree = "<group>"; };
+		E83713F12AD4AF800013867C /* ContactDirectoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDirectoryBuilder.swift; sourceTree = "<group>"; };
+		E83713F32AD4AFAB0013867C /* DelayedContactDirectoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedContactDirectoryBuilder.swift; sourceTree = "<group>"; };
+		E83713F62AD4B10E0013867C /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		E83713F92AD4B1BC0013867C /* ListContactsUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E83713FB2AD4B2BC0013867C /* AddContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E83713FD2AD4B2F10013867C /* UpdateContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContactUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E83713FF2AD4B3290013867C /* RemoveContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveContactUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E83714072AD4B4310013867C /* ExportContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportContactUseCase.swift; sourceTree = "<group>"; };
+		E83714092AD4B7A20013867C /* DataConversionStrategyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConversionStrategyFactory.swift; sourceTree = "<group>"; };
+		E837140B2AD4B83B0013867C /* DataReversionStrategyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReversionStrategyFactory.swift; sourceTree = "<group>"; };
+		E837140D2AD4B8820013867C /* ConversionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionType.swift; sourceTree = "<group>"; };
+		E83714102AD4B8A20013867C /* ReversionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversionType.swift; sourceTree = "<group>"; };
+		E83714122AD4BD7D0013867C /* ImportContactUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContactUseCase.swift; sourceTree = "<group>"; };
+		E83714142AD4C2340013867C /* DataContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContact.swift; sourceTree = "<group>"; };
+		E83714162AD4C3E60013867C /* ContactMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapper.swift; sourceTree = "<group>"; };
+		E83714182AD4C3FE0013867C /* DataContactMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContactMapper.swift; sourceTree = "<group>"; };
+		E837141A2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContactUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E837141C2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportContactUseCaseBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,14 +133,20 @@
 		797415752ACF079000B2F87A /* ContactsVTTechnicalTest */ = {
 			isa = PBXGroup;
 			children = (
-				797415972ACF0A3D00B2F87A /* DataReversionStrategy */,
-				797415962ACF099000B2F87A /* DataConversionStrategy */,
+				E837140F2AD4B8910013867C /* ImportContact */,
+				E83714062AD4B41D0013867C /* ExportContact */,
+				E83714052AD4B3DE0013867C /* RemoveContact */,
+				E83714042AD4B3D70013867C /* AddContact */,
+				E83714032AD4B3CD0013867C /* UpdateContact */,
+				E83714022AD4B3C50013867C /* ListContacts */,
+				E83714012AD4B3A00013867C /* ContactDirectory */,
+				E83713F82AD4B1410013867C /* DI */,
 				797415762ACF079000B2F87A /* ContactsVTTechnicalTest.h */,
 				797415772ACF079000B2F87A /* ContactsVTTechnicalTest.docc */,
 				7974159E2ACF0B8500B2F87A /* Contact.swift */,
-				797415A02ACF0BC700B2F87A /* ContactDirectory.swift */,
-				797415A22ACF1FFD00B2F87A /* ListContactsUseCase.swift */,
-				797415A42ACF209200B2F87A /* AddContactUseCase.swift */,
+				E83714162AD4C3E60013867C /* ContactMapper.swift */,
+				E83714142AD4C2340013867C /* DataContact.swift */,
+				E83714182AD4C3FE0013867C /* DataContactMapper.swift */,
 			);
 			path = ContactsVTTechnicalTest;
 			sourceTree = "<group>";
@@ -119,6 +165,7 @@
 				7974158D2ACF07CD00B2F87A /* DataConversionStrategy.swift */,
 				7974158F2ACF082D00B2F87A /* JSONConversionStrategy.swift */,
 				797415912ACF087D00B2F87A /* CSVConversionStrategy.swift */,
+				E83714092AD4B7A20013867C /* DataConversionStrategyFactory.swift */,
 			);
 			path = DataConversionStrategy;
 			sourceTree = "<group>";
@@ -129,8 +176,85 @@
 				797415982ACF0A4F00B2F87A /* DataReversionStrategy.swift */,
 				7974159A2ACF0A7400B2F87A /* JSONReversionStrategy.swift */,
 				7974159C2ACF0AE500B2F87A /* CSVReversionStrategy.swift */,
+				E837140B2AD4B83B0013867C /* DataReversionStrategyFactory.swift */,
 			);
 			path = DataReversionStrategy;
+			sourceTree = "<group>";
+		};
+		E83713F82AD4B1410013867C /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				E83713F62AD4B10E0013867C /* DependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		E83714012AD4B3A00013867C /* ContactDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				797415A02ACF0BC700B2F87A /* ContactDirectory.swift */,
+				E83713F12AD4AF800013867C /* ContactDirectoryBuilder.swift */,
+				E83713F32AD4AFAB0013867C /* DelayedContactDirectoryBuilder.swift */,
+			);
+			path = ContactDirectory;
+			sourceTree = "<group>";
+		};
+		E83714022AD4B3C50013867C /* ListContacts */ = {
+			isa = PBXGroup;
+			children = (
+				797415A22ACF1FFD00B2F87A /* ListContactsUseCase.swift */,
+				E83713F92AD4B1BC0013867C /* ListContactsUseCaseBuilder.swift */,
+			);
+			path = ListContacts;
+			sourceTree = "<group>";
+		};
+		E83714032AD4B3CD0013867C /* UpdateContact */ = {
+			isa = PBXGroup;
+			children = (
+				E83713ED2AD4AEEE0013867C /* UpdateContactUseCase.swift */,
+				E83713FD2AD4B2F10013867C /* UpdateContactUseCaseBuilder.swift */,
+			);
+			path = UpdateContact;
+			sourceTree = "<group>";
+		};
+		E83714042AD4B3D70013867C /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				797415A42ACF209200B2F87A /* AddContactUseCase.swift */,
+				E83713FB2AD4B2BC0013867C /* AddContactUseCaseBuilder.swift */,
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		E83714052AD4B3DE0013867C /* RemoveContact */ = {
+			isa = PBXGroup;
+			children = (
+				E83713EF2AD4AF3A0013867C /* RemoveContactUseCase.swift */,
+				E83713FF2AD4B3290013867C /* RemoveContactUseCaseBuilder.swift */,
+			);
+			path = RemoveContact;
+			sourceTree = "<group>";
+		};
+		E83714062AD4B41D0013867C /* ExportContact */ = {
+			isa = PBXGroup;
+			children = (
+				797415962ACF099000B2F87A /* DataConversionStrategy */,
+				E837140D2AD4B8820013867C /* ConversionType.swift */,
+				E83714072AD4B4310013867C /* ExportContactUseCase.swift */,
+				E837141C2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift */,
+			);
+			path = ExportContact;
+			sourceTree = "<group>";
+		};
+		E837140F2AD4B8910013867C /* ImportContact */ = {
+			isa = PBXGroup;
+			children = (
+				797415972ACF0A3D00B2F87A /* DataReversionStrategy */,
+				E83714102AD4B8A20013867C /* ReversionType.swift */,
+				E83714122AD4BD7D0013867C /* ImportContactUseCase.swift */,
+				E837141A2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift */,
+			);
+			path = ImportContact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,17 +372,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83713F22AD4AF800013867C /* ContactDirectoryBuilder.swift in Sources */,
 				7974158E2ACF07CD00B2F87A /* DataConversionStrategy.swift in Sources */,
+				E83713EE2AD4AEEE0013867C /* UpdateContactUseCase.swift in Sources */,
+				E83713FA2AD4B1BC0013867C /* ListContactsUseCaseBuilder.swift in Sources */,
+				E83713F42AD4AFAB0013867C /* DelayedContactDirectoryBuilder.swift in Sources */,
 				7974159D2ACF0AE500B2F87A /* CSVReversionStrategy.swift in Sources */,
+				E83713FE2AD4B2F10013867C /* UpdateContactUseCaseBuilder.swift in Sources */,
 				797415A32ACF1FFD00B2F87A /* ListContactsUseCase.swift in Sources */,
+				E83714082AD4B4310013867C /* ExportContactUseCase.swift in Sources */,
+				E837141B2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift in Sources */,
+				E83714132AD4BD7D0013867C /* ImportContactUseCase.swift in Sources */,
+				E83714152AD4C2340013867C /* DataContact.swift in Sources */,
+				E83713F72AD4B10E0013867C /* DependencyContainer.swift in Sources */,
 				797415902ACF082D00B2F87A /* JSONConversionStrategy.swift in Sources */,
+				E83714192AD4C3FE0013867C /* DataContactMapper.swift in Sources */,
+				E837140A2AD4B7A20013867C /* DataConversionStrategyFactory.swift in Sources */,
 				7974159B2ACF0A7400B2F87A /* JSONReversionStrategy.swift in Sources */,
+				E83713F02AD4AF3A0013867C /* RemoveContactUseCase.swift in Sources */,
 				7974159F2ACF0B8500B2F87A /* Contact.swift in Sources */,
 				797415992ACF0A4F00B2F87A /* DataReversionStrategy.swift in Sources */,
 				797415A52ACF209200B2F87A /* AddContactUseCase.swift in Sources */,
+				E83713FC2AD4B2BC0013867C /* AddContactUseCaseBuilder.swift in Sources */,
 				797415A12ACF0BC700B2F87A /* ContactDirectory.swift in Sources */,
 				797415782ACF079000B2F87A /* ContactsVTTechnicalTest.docc in Sources */,
+				E83714002AD4B3290013867C /* RemoveContactUseCaseBuilder.swift in Sources */,
+				E83714172AD4C3E60013867C /* ContactMapper.swift in Sources */,
 				797415922ACF087D00B2F87A /* CSVConversionStrategy.swift in Sources */,
+				E837141D2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift in Sources */,
+				E837140C2AD4B83B0013867C /* DataReversionStrategyFactory.swift in Sources */,
+				E83714112AD4B8A20013867C /* ReversionType.swift in Sources */,
+				E837140E2AD4B8820013867C /* ConversionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

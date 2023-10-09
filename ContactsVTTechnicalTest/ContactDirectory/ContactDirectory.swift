@@ -30,8 +30,6 @@ class ContactDirectory: ContactDirectoryProtocol {
         case nonExistingContact
     }
     
-    private let sharedInstance = ContactDirectory()
-    
     var contacts: [UUID: Contact] = [:]
     
     func add(contact: Contact) async throws {
@@ -51,10 +49,6 @@ class ContactDirectory: ContactDirectoryProtocol {
     
     func update(contact: Contact) async throws {
         contacts[contact.id] = contact
-    }
-    
-    func getInstance() -> ContactDirectoryProtocol {
-        sharedInstance
     }
 }
 

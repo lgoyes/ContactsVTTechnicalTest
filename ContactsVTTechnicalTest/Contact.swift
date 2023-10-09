@@ -7,11 +7,16 @@
 
 import Foundation
 
-protocol ContactNameGettable {
+public protocol ContactNameGettable {
     func getFullname() -> String
 }
 
-struct ContactName: ContactNameGettable {
+protocol ContactFineNameGettable {
+    func getName() -> String
+    func getLastname() -> String
+}
+
+public struct ContactName: ContactNameGettable, ContactFineNameGettable {
     enum Error: Swift.Error {
         case maxLengthExceeded
     }
@@ -32,16 +37,24 @@ struct ContactName: ContactNameGettable {
         }
     }
     
-    func getFullname() -> String {
+    public func getFullname() -> String {
         "\(name) \(lastname)"
+    }
+    
+    func getName() -> String {
+        name
+    }
+    
+    func getLastname() -> String {
+        lastname
     }
 }
 
-protocol ContactPhoneNumberGettable {
+public protocol ContactPhoneNumberGettable {
     func getPhoneNumber() -> String
 }
 
-struct ContactPhoneNumber: ContactPhoneNumberGettable {
+public struct ContactPhoneNumber: ContactPhoneNumberGettable {
     enum Error: Swift.Error {
         case invalidLength
         case unexpectedFormat
@@ -67,16 +80,16 @@ struct ContactPhoneNumber: ContactPhoneNumberGettable {
             throw Error.unexpectedFormat
         }
     }
-    func getPhoneNumber() -> String {
+    public func getPhoneNumber() -> String {
         phoneNumber
     }
 }
 
-protocol ContactEmailAddressGettable {
+public protocol ContactEmailAddressGettable {
     func getEmailAddress() -> String
 }
 
-struct ContactEmailAddress: ContactEmailAddressGettable {
+public struct ContactEmailAddress: ContactEmailAddressGettable {
     enum Error: Swift.Error {
         case invalidFormat
     }
@@ -99,14 +112,14 @@ struct ContactEmailAddress: ContactEmailAddressGettable {
             throw Error.invalidFormat
         }
     }
-    func getEmailAddress() -> String {
+    public func getEmailAddress() -> String {
         emailAddress
     }
 }
 
-struct Contact: ContactNameGettable, ContactPhoneNumberGettable, ContactEmailAddressGettable, Identifiable {
+public struct Contact: ContactNameGettable, ContactPhoneNumberGettable, ContactEmailAddressGettable, ContactFineNameGettable, Identifiable {
     
-    let id: UUID
+    public let id: UUID
 
     private let name: ContactName
     private let phoneNumber: ContactPhoneNumber
@@ -119,15 +132,23 @@ struct Contact: ContactNameGettable, ContactPhoneNumberGettable, ContactEmailAdd
         self.id = id
     }
     
-    func getFullname() -> String {
+    public func getFullname() -> String {
         name.getFullname()
     }
     
-    func getPhoneNumber() -> String {
+    public func getPhoneNumber() -> String {
         phoneNumber.getPhoneNumber()
     }
     
-    func getEmailAddress() -> String {
+    public func getEmailAddress() -> String {
         emailAddress.getEmailAddress()
+    }
+    
+    func getName() -> String {
+        name.getName()
+    }
+    
+    func getLastname() -> String {
+        name.getLastname()
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ListContactsUseCase {
+public protocol ListContactsUseCase {
     func execute() async throws
     func getData() -> [Contact]
 }

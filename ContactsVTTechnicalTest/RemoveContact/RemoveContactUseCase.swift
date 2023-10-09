@@ -1,27 +1,27 @@
 //
-//  AddContactUseCase.swift
+//  RemoveContactUseCase.swift
 //  ContactsVTTechnicalTest
 //
-//  Created by Luis David Goyes Garces on 5/10/23.
+//  Created by Luis David Goyes on 9/10/23.
 //
 
 import Foundation
 
-protocol AddContactUseCase {
+public protocol RemoveContactUseCase {
     func set(param: Contact)
     func execute() async throws
 }
 
-class DefaultAddContactUseCase: AddContactUseCase {
+class DefaultRemoveContactUseCase: RemoveContactUseCase {
     
     enum Error: Swift.Error {
         case missingContact
         case dataIntegrityError
     }
-    let contactDirectory: ContactDirectoryStoreOperation
+    let contactDirectory: ContactDirectoryRemoveOperation
     var contact: Contact?
     
-    init(contactDirectory: ContactDirectoryStoreOperation) {
+    init(contactDirectory: ContactDirectoryRemoveOperation) {
         self.contactDirectory = contactDirectory
     }
     
@@ -34,7 +34,7 @@ class DefaultAddContactUseCase: AddContactUseCase {
             throw Error.missingContact
         }
         do {
-            try await contactDirectory.add(contact: contact)
+            try await contactDirectory.remove(contact: contact)
         } catch {
             throw Error.dataIntegrityError
         }
