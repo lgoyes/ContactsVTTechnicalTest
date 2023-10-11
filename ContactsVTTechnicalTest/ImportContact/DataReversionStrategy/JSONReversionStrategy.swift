@@ -14,7 +14,7 @@ class JSONReversionStrategy: DataReversionStrategy {
         do {
             return try decoder.decode(T.self, from: data)
         } catch {
-            print("Error al decodificar JSON: \(error)")
+            debugPrint("Error al decodificar JSON: \(error)")
             return nil
         }
     }

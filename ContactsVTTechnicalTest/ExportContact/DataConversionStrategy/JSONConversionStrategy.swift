@@ -15,7 +15,7 @@ class JSONConversionStrategy: DataConversionStrategy {
             let jsonData = try encoder.encode(object)
             return jsonData
         } catch {
-            print("Error al convertir el objeto a JSON: \(error)")
+            debugPrint("Error al convertir el objeto a JSON: \(error)")
         }
         
         return nil

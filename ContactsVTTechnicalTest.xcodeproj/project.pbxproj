@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		797415782ACF079000B2F87A /* ContactsVTTechnicalTest.docc in Sources */ = {isa = PBXBuildFile; fileRef = 797415772ACF079000B2F87A /* ContactsVTTechnicalTest.docc */; };
 		7974157E2ACF079000B2F87A /* ContactsVTTechnicalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797415732ACF079000B2F87A /* ContactsVTTechnicalTest.framework */; };
-		797415832ACF079000B2F87A /* ContactsVTTechnicalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797415822ACF079000B2F87A /* ContactsVTTechnicalTestTests.swift */; };
 		797415842ACF079000B2F87A /* ContactsVTTechnicalTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 797415762ACF079000B2F87A /* ContactsVTTechnicalTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7974158E2ACF07CD00B2F87A /* DataConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974158D2ACF07CD00B2F87A /* DataConversionStrategy.swift */; };
 		797415902ACF082D00B2F87A /* JSONConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974158F2ACF082D00B2F87A /* JSONConversionStrategy.swift */; };
@@ -42,6 +41,28 @@
 		E83714192AD4C3FE0013867C /* DataContactMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83714182AD4C3FE0013867C /* DataContactMapper.swift */; };
 		E837141B2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837141A2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift */; };
 		E837141D2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E837141C2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift */; };
+		E8F7DE832AD6FD3F00CEB221 /* JSONReversionStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE822AD6FD3F00CEB221 /* JSONReversionStrategyTests.swift */; };
+		E8F7DE852AD6FF8500CEB221 /* CSVReversionStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE842AD6FF8500CEB221 /* CSVReversionStrategyTests.swift */; };
+		E8F7DE872AD71FEB00CEB221 /* DefaultRemoveContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE862AD71FEB00CEB221 /* DefaultRemoveContactUseCaseTests.swift */; };
+		E8F7DE892AD724A000CEB221 /* DataReversionStrategyFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE882AD724A000CEB221 /* DataReversionStrategyFactoryTests.swift */; };
+		E8F7DE8B2AD725C800CEB221 /* ContactDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE8A2AD725C800CEB221 /* ContactDirectoryTests.swift */; };
+		E8F7DE8D2AD72A4400CEB221 /* ContactDirectoryDelayedDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE8C2AD72A4400CEB221 /* ContactDirectoryDelayedDecoratorTests.swift */; };
+		E8F7DE8F2AD72C3700CEB221 /* ContactNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE8E2AD72C3700CEB221 /* ContactNameTests.swift */; };
+		E8F7DE912AD7358100CEB221 /* ContactPhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE902AD7358100CEB221 /* ContactPhoneNumberTests.swift */; };
+		E8F7DE932AD7378700CEB221 /* ContactEmailAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE922AD7378700CEB221 /* ContactEmailAddressTests.swift */; };
+		E8F7DE952AD7386C00CEB221 /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE942AD7386C00CEB221 /* ContactTests.swift */; };
+		E8F7DE972AD738EB00CEB221 /* DefaultImportContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE962AD738EB00CEB221 /* DefaultImportContactUseCaseTests.swift */; };
+		E8F7DE992AD73C5400CEB221 /* DefaultExportContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE982AD73C5400CEB221 /* DefaultExportContactUseCaseTests.swift */; };
+		E8F7DE9B2AD73D8700CEB221 /* DefaultAddContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE9A2AD73D8700CEB221 /* DefaultAddContactUseCaseTests.swift */; };
+		E8F7DE9D2AD73E8C00CEB221 /* DefaultListContactsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE9C2AD73E8C00CEB221 /* DefaultListContactsUseCaseTests.swift */; };
+		E8F7DE9F2AD73F1800CEB221 /* DefaultUpdateContactUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DE9E2AD73F1800CEB221 /* DefaultUpdateContactUseCaseTests.swift */; };
+		E8F7DEA12AD73FD200CEB221 /* ContactMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEA02AD73FD200CEB221 /* ContactMapperTests.swift */; };
+		E8F7DEA32AD741C400CEB221 /* DataConversionStrategyFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEA22AD741C400CEB221 /* DataConversionStrategyFactoryTests.swift */; };
+		E8F7DEA52AD7424600CEB221 /* CSVConversionStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEA42AD7424600CEB221 /* CSVConversionStrategyTests.swift */; };
+		E8F7DEA72AD7559300CEB221 /* JSONConversionStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEA62AD7559300CEB221 /* JSONConversionStrategyTests.swift */; };
+		E8F7DEA92AD7562C00CEB221 /* RemoveContactUseCaseBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEA82AD7562C00CEB221 /* RemoveContactUseCaseBuilderTests.swift */; };
+		E8F7DEAB2AD7569300CEB221 /* ListContactsUseCaseBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEAA2AD7569300CEB221 /* ListContactsUseCaseBuilderTests.swift */; };
+		E8F7DEAD2AD7573300CEB221 /* ImportContactUseCaseBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F7DEAC2AD7573300CEB221 /* ImportContactUseCaseBuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +80,6 @@
 		797415762ACF079000B2F87A /* ContactsVTTechnicalTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsVTTechnicalTest.h; sourceTree = "<group>"; };
 		797415772ACF079000B2F87A /* ContactsVTTechnicalTest.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ContactsVTTechnicalTest.docc; sourceTree = "<group>"; };
 		7974157D2ACF079000B2F87A /* ContactsVTTechnicalTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsVTTechnicalTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		797415822ACF079000B2F87A /* ContactsVTTechnicalTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVTTechnicalTestTests.swift; sourceTree = "<group>"; };
 		7974158D2ACF07CD00B2F87A /* DataConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConversionStrategy.swift; sourceTree = "<group>"; };
 		7974158F2ACF082D00B2F87A /* JSONConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConversionStrategy.swift; sourceTree = "<group>"; };
 		797415912ACF087D00B2F87A /* CSVConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVConversionStrategy.swift; sourceTree = "<group>"; };
@@ -90,6 +110,28 @@
 		E83714182AD4C3FE0013867C /* DataContactMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContactMapper.swift; sourceTree = "<group>"; };
 		E837141A2AD4C89E0013867C /* ImportContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContactUseCaseBuilder.swift; sourceTree = "<group>"; };
 		E837141C2AD4C92F0013867C /* ExportContactUseCaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportContactUseCaseBuilder.swift; sourceTree = "<group>"; };
+		E8F7DE822AD6FD3F00CEB221 /* JSONReversionStrategyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReversionStrategyTests.swift; sourceTree = "<group>"; };
+		E8F7DE842AD6FF8500CEB221 /* CSVReversionStrategyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReversionStrategyTests.swift; sourceTree = "<group>"; };
+		E8F7DE862AD71FEB00CEB221 /* DefaultRemoveContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRemoveContactUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DE882AD724A000CEB221 /* DataReversionStrategyFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReversionStrategyFactoryTests.swift; sourceTree = "<group>"; };
+		E8F7DE8A2AD725C800CEB221 /* ContactDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDirectoryTests.swift; sourceTree = "<group>"; };
+		E8F7DE8C2AD72A4400CEB221 /* ContactDirectoryDelayedDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDirectoryDelayedDecoratorTests.swift; sourceTree = "<group>"; };
+		E8F7DE8E2AD72C3700CEB221 /* ContactNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNameTests.swift; sourceTree = "<group>"; };
+		E8F7DE902AD7358100CEB221 /* ContactPhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhoneNumberTests.swift; sourceTree = "<group>"; };
+		E8F7DE922AD7378700CEB221 /* ContactEmailAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEmailAddressTests.swift; sourceTree = "<group>"; };
+		E8F7DE942AD7386C00CEB221 /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
+		E8F7DE962AD738EB00CEB221 /* DefaultImportContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImportContactUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DE982AD73C5400CEB221 /* DefaultExportContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExportContactUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DE9A2AD73D8700CEB221 /* DefaultAddContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAddContactUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DE9C2AD73E8C00CEB221 /* DefaultListContactsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultListContactsUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DE9E2AD73F1800CEB221 /* DefaultUpdateContactUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUpdateContactUseCaseTests.swift; sourceTree = "<group>"; };
+		E8F7DEA02AD73FD200CEB221 /* ContactMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapperTests.swift; sourceTree = "<group>"; };
+		E8F7DEA22AD741C400CEB221 /* DataConversionStrategyFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConversionStrategyFactoryTests.swift; sourceTree = "<group>"; };
+		E8F7DEA42AD7424600CEB221 /* CSVConversionStrategyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVConversionStrategyTests.swift; sourceTree = "<group>"; };
+		E8F7DEA62AD7559300CEB221 /* JSONConversionStrategyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConversionStrategyTests.swift; sourceTree = "<group>"; };
+		E8F7DEA82AD7562C00CEB221 /* RemoveContactUseCaseBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveContactUseCaseBuilderTests.swift; sourceTree = "<group>"; };
+		E8F7DEAA2AD7569300CEB221 /* ListContactsUseCaseBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContactsUseCaseBuilderTests.swift; sourceTree = "<group>"; };
+		E8F7DEAC2AD7573300CEB221 /* ImportContactUseCaseBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContactUseCaseBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +196,28 @@
 		797415812ACF079000B2F87A /* ContactsVTTechnicalTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				797415822ACF079000B2F87A /* ContactsVTTechnicalTestTests.swift */,
+				E8F7DE822AD6FD3F00CEB221 /* JSONReversionStrategyTests.swift */,
+				E8F7DE842AD6FF8500CEB221 /* CSVReversionStrategyTests.swift */,
+				E8F7DE862AD71FEB00CEB221 /* DefaultRemoveContactUseCaseTests.swift */,
+				E8F7DE882AD724A000CEB221 /* DataReversionStrategyFactoryTests.swift */,
+				E8F7DE8A2AD725C800CEB221 /* ContactDirectoryTests.swift */,
+				E8F7DE8C2AD72A4400CEB221 /* ContactDirectoryDelayedDecoratorTests.swift */,
+				E8F7DE8E2AD72C3700CEB221 /* ContactNameTests.swift */,
+				E8F7DE902AD7358100CEB221 /* ContactPhoneNumberTests.swift */,
+				E8F7DE922AD7378700CEB221 /* ContactEmailAddressTests.swift */,
+				E8F7DE942AD7386C00CEB221 /* ContactTests.swift */,
+				E8F7DE962AD738EB00CEB221 /* DefaultImportContactUseCaseTests.swift */,
+				E8F7DE982AD73C5400CEB221 /* DefaultExportContactUseCaseTests.swift */,
+				E8F7DE9A2AD73D8700CEB221 /* DefaultAddContactUseCaseTests.swift */,
+				E8F7DE9C2AD73E8C00CEB221 /* DefaultListContactsUseCaseTests.swift */,
+				E8F7DE9E2AD73F1800CEB221 /* DefaultUpdateContactUseCaseTests.swift */,
+				E8F7DEA02AD73FD200CEB221 /* ContactMapperTests.swift */,
+				E8F7DEA22AD741C400CEB221 /* DataConversionStrategyFactoryTests.swift */,
+				E8F7DEA42AD7424600CEB221 /* CSVConversionStrategyTests.swift */,
+				E8F7DEA62AD7559300CEB221 /* JSONConversionStrategyTests.swift */,
+				E8F7DEA82AD7562C00CEB221 /* RemoveContactUseCaseBuilderTests.swift */,
+				E8F7DEAA2AD7569300CEB221 /* ListContactsUseCaseBuilderTests.swift */,
+				E8F7DEAC2AD7573300CEB221 /* ImportContactUseCaseBuilderTests.swift */,
 			);
 			path = ContactsVTTechnicalTestTests;
 			sourceTree = "<group>";
@@ -410,7 +473,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797415832ACF079000B2F87A /* ContactsVTTechnicalTestTests.swift in Sources */,
+				E8F7DE9D2AD73E8C00CEB221 /* DefaultListContactsUseCaseTests.swift in Sources */,
+				E8F7DE992AD73C5400CEB221 /* DefaultExportContactUseCaseTests.swift in Sources */,
+				E8F7DE932AD7378700CEB221 /* ContactEmailAddressTests.swift in Sources */,
+				E8F7DE872AD71FEB00CEB221 /* DefaultRemoveContactUseCaseTests.swift in Sources */,
+				E8F7DEA52AD7424600CEB221 /* CSVConversionStrategyTests.swift in Sources */,
+				E8F7DEAD2AD7573300CEB221 /* ImportContactUseCaseBuilderTests.swift in Sources */,
+				E8F7DE952AD7386C00CEB221 /* ContactTests.swift in Sources */,
+				E8F7DE8D2AD72A4400CEB221 /* ContactDirectoryDelayedDecoratorTests.swift in Sources */,
+				E8F7DE912AD7358100CEB221 /* ContactPhoneNumberTests.swift in Sources */,
+				E8F7DEA12AD73FD200CEB221 /* ContactMapperTests.swift in Sources */,
+				E8F7DE972AD738EB00CEB221 /* DefaultImportContactUseCaseTests.swift in Sources */,
+				E8F7DE832AD6FD3F00CEB221 /* JSONReversionStrategyTests.swift in Sources */,
+				E8F7DE852AD6FF8500CEB221 /* CSVReversionStrategyTests.swift in Sources */,
+				E8F7DEA72AD7559300CEB221 /* JSONConversionStrategyTests.swift in Sources */,
+				E8F7DE9B2AD73D8700CEB221 /* DefaultAddContactUseCaseTests.swift in Sources */,
+				E8F7DEA92AD7562C00CEB221 /* RemoveContactUseCaseBuilderTests.swift in Sources */,
+				E8F7DE892AD724A000CEB221 /* DataReversionStrategyFactoryTests.swift in Sources */,
+				E8F7DEAB2AD7569300CEB221 /* ListContactsUseCaseBuilderTests.swift in Sources */,
+				E8F7DE8F2AD72C3700CEB221 /* ContactNameTests.swift in Sources */,
+				E8F7DE9F2AD73F1800CEB221 /* DefaultUpdateContactUseCaseTests.swift in Sources */,
+				E8F7DE8B2AD725C800CEB221 /* ContactDirectoryTests.swift in Sources */,
+				E8F7DEA32AD741C400CEB221 /* DataConversionStrategyFactoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

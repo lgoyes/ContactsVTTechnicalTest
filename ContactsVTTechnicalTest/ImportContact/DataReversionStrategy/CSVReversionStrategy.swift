@@ -9,13 +9,21 @@ import Foundation
 import CodableCSV
 
 class CSVReversionStrategy: DataReversionStrategy {
-    let decoder = CSVDecoder()
+    let decoder = CSVDecoder {
+        $0.encoding = .utf8
+        $0.delimiters = Delimiter.Pair(",", "\n")
+        $0.headerStrategy = .firstLine
+    }
 
     func revert<T>(_ data: Data) -> T? where T : Decodable {
         do {
-            return try decoder.decode(T.self, from: data)
+            let results = try decoder.decode([T].self, from: data)
+            if results.isEmpty {
+                return nil
+            }
+            return results.first!
         } catch {
-            print("Error al decodificar JSON: \(error)")
+            debugPrint("Error al decodificar CSV: \(error)")
             return nil
         }
     }

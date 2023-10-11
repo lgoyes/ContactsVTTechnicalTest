@@ -37,7 +37,7 @@ class ContactDirectory: ContactDirectoryProtocol {
     }
     
     func remove(contact: Contact) async throws {
-        if contacts[contact.id] != nil {
+        if contacts[contact.id] == nil {
             throw Error.nonExistingContact
         }
         contacts.removeValue(forKey: contact.id)

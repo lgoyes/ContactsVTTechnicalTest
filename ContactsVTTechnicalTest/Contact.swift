@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol ContactNameGettable {
+public protocol ContactNameGettable: Equatable {
     func getFullname() -> String
 }
 
-protocol ContactFineNameGettable {
+protocol ContactFineNameGettable: Equatable {
     func getName() -> String
     func getLastname() -> String
 }
@@ -21,14 +21,14 @@ public struct ContactName: ContactNameGettable, ContactFineNameGettable {
         case maxLengthExceeded
     }
     
-    private struct Constant {
+    struct Constant {
         static let maxLength = 20
     }
     
     private let name: String
     private let lastname: String
     
-    init(name: String, lastname: String) throws {
+    public init(name: String, lastname: String) throws {
         self.name = name
         self.lastname = lastname
         
@@ -50,7 +50,7 @@ public struct ContactName: ContactNameGettable, ContactFineNameGettable {
     }
 }
 
-public protocol ContactPhoneNumberGettable {
+public protocol ContactPhoneNumberGettable: Equatable {
     func getPhoneNumber() -> String
 }
 
@@ -60,13 +60,13 @@ public struct ContactPhoneNumber: ContactPhoneNumberGettable {
         case unexpectedFormat
     }
     
-    private struct Constant {
+    struct Constant {
         static let expectedLength = 10
     }
     
     private let phoneNumber: String
     
-    init(phoneNumber: String) throws {
+    public init(phoneNumber: String) throws {
         self.phoneNumber = phoneNumber
         
         guard phoneNumber.count == Constant.expectedLength else {
@@ -74,7 +74,7 @@ public struct ContactPhoneNumber: ContactPhoneNumberGettable {
         }
         
         let numbers = CharacterSet.decimalDigits
-        let invalidCharacters = phoneNumber.trimmingCharacters(in: numbers.inverted)
+        let invalidCharacters = phoneNumber.trimmingCharacters(in: numbers)
         
         guard invalidCharacters.isEmpty else {
             throw Error.unexpectedFormat
@@ -85,7 +85,7 @@ public struct ContactPhoneNumber: ContactPhoneNumberGettable {
     }
 }
 
-public protocol ContactEmailAddressGettable {
+public protocol ContactEmailAddressGettable: Equatable {
     func getEmailAddress() -> String
 }
 
@@ -94,13 +94,13 @@ public struct ContactEmailAddress: ContactEmailAddressGettable {
         case invalidFormat
     }
     
-    private struct Constant {
+    struct Constant {
         static let emailRegex = #"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"#
     }
     
     private let emailAddress: String
     
-    init(emailAddress: String) throws {
+    public init(emailAddress: String) throws {
         self.emailAddress = emailAddress
         
         guard let range = emailAddress.range(of: Constant.emailRegex, options: .regularExpression) else {
@@ -125,7 +125,7 @@ public struct Contact: ContactNameGettable, ContactPhoneNumberGettable, ContactE
     private let phoneNumber: ContactPhoneNumber
     private let emailAddress: ContactEmailAddress
     
-    init(name: ContactName, phoneNumber: ContactPhoneNumber, emailAddress: ContactEmailAddress, id: UUID = UUID()) {
+    public init(name: ContactName, phoneNumber: ContactPhoneNumber, emailAddress: ContactEmailAddress, id: UUID = UUID()) {
         self.name = name
         self.phoneNumber = phoneNumber
         self.emailAddress = emailAddress
